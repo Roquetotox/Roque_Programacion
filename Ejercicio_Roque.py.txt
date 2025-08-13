@@ -1,0 +1,59 @@
+# Primer ejercicio
+numero_1= int(input("Ingrese el primer número: "))  
+numero_2 = float(input("Ingrese el segundo número:")) 
+operacion = input("Ingrese la operación (suma, resta, multiplicacion, division): ")  
+if operacion == "*":
+    resultado = numero_1 * numero_2
+    print(f"El resultado de multiplicar {numero_1} * {numero_2} es: {resultado}")
+
+elif operacion == "suma":
+    resultado = numero_1 + numero_2
+    print(f"El resultado de sumar {numero_1} + {numero_2} es: {resultado}") 
+elif operacion == "resta":
+    resultado = numero_1 - numero_2
+    print(f"El resultado de restar {numero_1} - {numero_2} es: {resultado}")    
+elif operacion == "division":
+    if numero_2 != 0:
+        resultado = numero_1 / numero_2
+        print(f"El resultado de dividir {numero_1} / {numero_2} es: {resultado}")
+    else:
+        print("Error: No se puede dividir por cero.")
+        
+#sEGUNDO EJERCICIO
+
+lista_compras = []
+
+print("Vamos a crear tu lista de compras.")
+for i in range(3):
+    articulo = input(f"Ingrese el artículo{i + 1}: ")
+    lista_compras.append(articulo)
+    
+print("\n? Tu lista de compras es:")
+for item in lista_compras:
+    print(f"- {item}")
+
+print(f"\n Total de artículos en tu lista: {len(lista_compras)}")
+
+# tercer ejercicio
+
+nombre = (input("Cual es tu nombre"))
+edad = (input("Cual es tu edad"))
+ciudad = (input("Cual es tu ciudad de nacimiento"))
+datos_personales= (nombre, edad, ciudad)
+nombre_desemp, edad_desemp, ciudad_desemp =datos_personales
+print (f"El usuario {nombre_desemp} de {edad_desemp} años, Nacio en la ciudad de {ciudad_desemp}")   
+
+# Cuarto ejercicio
+
+agenda = { 
+    "Ana": "10111213",
+    "Pedro": "13141516"
+}
+Nombre = (input("Ingrese el nombre del contacto que desea buscar:"))
+if nombre in agenda:
+    print(f"El numero de {nombre} es {agenda[nombre]}")
+else:
+        print("Contacto no encontrado")
+
+
+
